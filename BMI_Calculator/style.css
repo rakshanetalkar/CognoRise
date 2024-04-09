@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair Display');
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Playfair Display;
+    overflow: hidden;
+}
+.container{
+    width: 100%;
+    height: 530px;
+    background: url('bg.jpg');
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(77, 74, 74);
+}
+.container .panel{
+    position: relative;
+    right: 25%;
+    width: 300px;
+    height: 255px;
+    padding: 0px 20px;
+    background-color:rgba(202, 198, 198, 0.3);
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #999797,
+                -5px -5px 5px rgb(173, 168, 168);
+}
+.container .panel h2{
+    text-align: center;
+    padding: 10px;
+}
+.container .panel h2::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    display: block;
+    margin-top: 10px;
+    background-color:white;
+}
+.input-panel .height-panel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color:white;
+    margin-top: 15px;
+    padding: 3px 0px;
+    transition: all ease-in 0.4s;
+}
+.input-panel .height-panel:hover{
+    background: rgb(192, 190, 190);
+}
+.input-panel .height-panel input{
+    padding: 5px 0px;
+    width: 60%;
+    border: 0;
+    outline: 0;
+    font-size: 17px;
+    text-align: center;
+    background: transparent;
+    font-family: Poppins;
+}
+.input-panel .height-panel select{
+    padding: 4px 5px;
+    margin-left: 5px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    font-size: 17px;
+    font-family: Poppins;
+}
+.input-panel button{
+    width: 100%;
+    padding: 7px;
+    margin-top: 10%;
+    border-radius: 10px;
+    border: 0;
+    outline: 0;
+    font-size: 17px;
+    cursor: pointer;
+    background: gray;
+    color: white;
+    transition: all ease-in 0.4s;
+}
+.input-panel button:hover{
+    background: white;
+    color: black;
+}
+.dialog{
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.dialog .container .panel .input-panel .btn{
+    width: 30%;
+    padding: 7px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    margin-left: 35%;
+    font-size: 17px;
+    cursor: pointer;
+    background: rgb(111, 147, 255);
+    color: white;
+    margin-top: 5%;
+}
+.dialog .container .panel .input-panel button:hover{
+    background: blue;
+}
+.dialog .container .panel i{
+    width: 50px;
+    height: 50px;
+    box-shadow: 0px 0px 7px white;
+    border-radius: 50%;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 45px;
+    margin: auto;
+    margin-top: 15%;
+    color: green;
+    background: white;
+}
+.dialog .container .panel .input-panel p{
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    font-weight: 500px;
+    font-family: Poppins;
+}
+.d-none{
+    display: none;
+}
+.display{
+    display: flex;
+}

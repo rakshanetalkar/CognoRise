@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Porfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!--font cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+    <!-- Header Design-->
+    <header class="header">
+        <a href="#" class="logo">𝑹𝒂𝒌𝒔𝒉𝒂</a>
+    
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+    <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#skill">Skills</a>
+        <a href="#project">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+    <!--Home Section design-->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h2>Hello, Myself</h2>
+            <h1>Raksha Netalkar</h1>
+            <h3>I'm a <span class="names"></span></h3>
+
+            <!--Social Media-->
+            <div class="social-media">
+                <a href="#" id="toolTip"><i class="fa-brands fa-linkedin"></i></a>                
+                <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-solid fa-location-dot"></i>
+                </a>
+            </div>
+            <a href="Resume.pdf" class="btn" download>Download CV</a>
+        </div>
+        <div class="home-img">
+            <img src="img.png">
+        </div>
+    </section>
+
+    <!--About Section design-->
+    <section class="about" id="about">
+         <div class="about-img reavealimg">
+            <img src="img1.jpeg">
+        </div>
+
+        <div class="about-content reavealright">
+            <h2 class="heading">About <span>Me</span></h2>
+            
+            <h3>Hello World!</h3>
+            <p> I am Raksha Netalkar, I graduated MCA from Solapur University, Solapur in 2023. I am a fresher
+                I have great skills in HTML, CSS, Javascript and Angular. I'm always excited to develope simple, beautiful and user
+                friendly websites and applications. My positive attitude and excitiment in Frontend development will increase my self-confidents.
+                <br>Check my resume and if your interested to hire me. I'd excited to connect.
+                <br>Thank you for taking the time to visit my website. Have a great day!
+            </p>
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="openTab('education')">Education</p>
+                <p class="tab-links" onclick="openTab('achivements')">Achivements</p>
+            </div>
+            <div class="tab-contents active-tab" id="education">
+                <ul>
+                    <li><Span><i class="fa-solid fa-graduation-cap"></i> 2021-2023</Span><br>MCA from Solapur University, Solapur</li>
+                    <li><span><i class="fa-solid fa-graduation-cap"></i> 2018-2021</span><br>BCS from Sangameshwar College, Solapur</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="achivements">
+                <ul>
+                    <li><Span><i class="fa-solid fa-medal"></i> Gold Medal</Span><br>In MCA from Solapur University, Solapur</li>
+                    <li><span><i class="fa-solid fa-trophy"></i> Award</span><br>From Quick Heal Foundation for Best program outreach and Impact winner</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!--Skill Section design-->
+    <div class="skillContainer">
+        <h2 class="heading reavealTop">My <span>Skills</span></h2>
+    <section1 class="skill" id="skill">
+
+        <div class="container1 reavealleft" id="skill1" >
+            <h3>Technical skills</h3>
+
+            <div class="technical-bars">
+
+                <div class="bar"><i style="color: orangered;" class="fa-brands fa-html5"></i>
+                    <div class="info">
+                        <span>HTML</span>
+                    </div>
+                    <div class="progress-Line html">
+                        <span></span>
+                    </div>
+                </div>
+        
+                <div class="bar"><i style="color: #147bbc;" class="fa-brands fa-css3-alt"></i>
+                    <div class="info">
+                        <span>CSS</span>
+                    </div>
+                    <div class="progress-Line css">
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="bar"><i style="color: #b0bc1e;" class="fa-brands fa-js"></i>
+                    <div class="info">
+                        <span>Javascript</span>
+                    </div>
+                    <div class="progress-Line js">
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="bar"><i style="color: red;" class="fa-brands fa-angular"></i>
+                    <div class="info">
+                        <span>Angular</span>
+                    </div>
+                    <div class="progress-Line angular">
+                        <span></span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container1 reavealright" id="skill1">
+            <h3>Professional skills</h3>
+
+            <div class="radial-bars">
+
+                <div class="radial-bar">
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                        <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+                    </svg>
+                    <div class="percentage">90%</div>
+                    <div class="text">Creativity</div>
+                </div>
+
+                <div class="radial-bar">
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                        <circle class="path path-2" cx="100" cy="100" r="80"></circle>
+                    </svg>
+                    <div class="percentage">70%</div>
+                    <div class="text">Teamwork</div>
+                </div>
+
+                <div class="radial-bar">
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                        <circle class="path path-3" cx="100" cy="100" r="80"></circle>
+                    </svg>
+                    <div class="percentage">60%</div>
+                    <div class="text">Communication</div>
+                </div>
+                <!--<div class="radial-bar">
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                        <circle class="path path-4" cx="100" cy="100" r="80"></circle>
+                    </svg>
+                    <div class="percentage">80%</div>
+                    <div class="text">Amicable</div>
+                </div>-->
+
+            </div>
+        </div>
+    </section1>
+</div>
+
+    <!--Project Section design-->
+    <section class="project reavealBottom" id="project"> 
+        <div class="main-text" id="project">
+            <h2 class="heading">Latest<span> Projects</span></h2>
+
+            <div class="portfolio-container">
+
+                <div class="portfolio-box">
+                    <img src="p1.png">
+                    <div class="portfolio-layer">
+                        <h4>Dog Adoption Website</h4>
+                        <p>Website is created using html, css, javascript.
+                            This website provides information about the different types of dogs.</p>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </div>
+                </div>
+
+                <div class="portfolio-box">
+                    <img src="p3.png">
+                    <div class="portfolio-layer">
+                        <h4>Ayodhya Website</h4>
+                        <p>Website is created using html, css, javascript.
+                            This website provides all the information about the ayodhya temple.
+                        </p>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </div>
+                </div>
+
+                <div class="portfolio-box">
+                    <img src="p7.png">
+                    <div class="portfolio-layer">
+                        <h4>Calculator</h4>
+                        <p>Application is created using html, css, javascript.
+                            This application provides two different Calculators simple and scientific.</p>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </div>
+                </div>
+
+                <div class="portfolio-box">
+                    <img src="p2.png">
+                    <div class="portfolio-layer">
+                        <h4>Instagram Cloan</h4>
+                        <p>Application is created using html, css, javascript,
+                            which works same as instagram.</p>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </div>
+                </div>
+
+                <div class="portfolio-box">
+                    <img src="p4.png">
+                    <div class="portfolio-layer">
+                        <h4>Weather App</h4>
+                        <p>App is created using html, css, javascript,
+                            which provides the weather information by searching the city names.</p>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </div>
+                </div>
+
+                <div class="portfolio-box">
+                    <img src="p5.png">
+                    <div class="portfolio-layer">
+                        <h4>QR Code Generator</h4>
+                        <p>App is created using html, css, javascript.
+                            In this qr is generated after providing the url in search bar.</p>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--Contact Section design-->
+    <section class="contact reavealBottom" id="contact">
+            <h2 class="heading">Contact<span> Me</span></h2>
+
+            <form action="#">
+                <div class="input-box">
+                    <input type="text" placeholder="Full Name">
+                    <input type="email" placeholder="Email Address">
+                </div>
+                <div class="input-box">
+                    <input type="number" placeholder="Mobile Number">
+                    <input type="email" placeholder="Email Subject">
+                </div>
+                <textarea cols="30" rows="10" placeholder="Your Meassage"></textarea>
+                <input type="submit" value="Send Meassage" class="btn">
+            </form>
+    </section>
+
+    <!--Footer Section design-->
+    <footer>
+        <div class="footer-text">
+            <p>Copyright &copy; 2024 by @rakshanetalkar | All Rights Reserved.</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
+        </div>
+    </footer>
+
+     <!--    main JS   -->
+    <script src="main.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+</body>
+</html>

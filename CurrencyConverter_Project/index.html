@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+    <div class="Box">
+        <header>Currency Converter</header>
+        <form action="#">
+            <div class="amount">
+                <input type="text" placeholder="Enter Amount">
+            </div>
+            <div class="dropDown-list">
+                <div class="from">
+                    <p>From</p>
+                    <div class="selectBox">
+                        <img src="https://flagsapi.com/IN/shiny/64.png">
+                        <select>
+                            <!--<option value="IND">IND</option>
+                            <option value="USD">USD</option>
+                            <option value="AFG">AFG</option>
+                            <option value="PKR">PKR</option>
+                            <option value="MAD">MAD</option>-->
+                        </select>
+                    </div>
+                </div>
+                <div class="icon"><i class="fa-solid fa-arrow-right-arrow-left"></i></div>
+                <div class="to">
+                    <p>To</p>
+                    <div class="selectBox">
+                        <img src="https://flagsapi.com/US/shiny/64.png">
+                        <select>
+                            <!--<option value="IND">IND</option>
+                            <option value="USD">USD</option>
+                            <option value="AFG">AFG</option>
+                            <option value="PKR">PKR</option>
+                            <option value="MAD">MAD</option>-->
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="exchangeRate">Getting Value...</div>
+
+            <button>Get Exchange Rate</button>
+        </form>
+    </div>
+    <script src="main.js"></script>
+    
+</body>
+</html>
